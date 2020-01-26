@@ -1,0 +1,25 @@
+Did you before know about the techniques Git, GitHub, Markdown and/or GitHub Pages?
+
+I have learned about Git and GitHub in previous courses and i am confortable using 
+these two tools.
+
+This si the first time i heard about Markdown and Github Pages. Though. i have unknowingly 
+use Markdown in  different forums/github to style read.me files
+
+Have you ever created websites before?
+
+Yes, I did. I played around with HTML and CSS a few years ago. It was simple site to
+display some information about the person. 
+
+
+Briefly explain your experience and knowledge of web application development.
+
+I do not have much experience with web development expect, from web application coruse where 
+we used RESTful API and Java RMI to build a web applications. We also programmed on a lower
+layer with TCP/UDP protocols and how to create a server from scratch using these protocols.
+I have also gained good knowledge about proxy servers and its role in the web traffic control
+and server optimizations. 
+
+What is your TIL for this course section?
+
+I have learned what Markdown is and how can we set up own web page using GitHub Pages. 
