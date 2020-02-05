@@ -10,10 +10,20 @@
     var schoolNr
     var komunSchools
 
-    fetch('data\kommun_nrs.xml')
+    fetch('data/kommun_nrs.json')
     .then(res => res.json())
     .then(data => schoolNr = data)
-    .then(() => console.log(schoolNr))
+    .then((schoolNr) => console.log(schoolNr))
+
+    var jsonString = JSON.parse(schoolNr)
+
+    for (var i = 0; i < jsonString.Kommuner.length; i++) {
+        var kommun = jsonString.counters[i];
+        console.log(kommun.Kommunkod);
+        opt.appendCHild(document.createTextNode(kommun.Namen))
+        opt.value = kommun.Kommunkod
+        sel.appendChild(opt)
+    }
 
     /*for(element element in the komun_nrs JSON/XML file)
 {

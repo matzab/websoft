@@ -5,9 +5,13 @@
     var offsetHeight = pepe.offsetHeight
     var w = window.innerWidth;
     var h = window.innerHeight;
-    var rect = pepe.getBoundingClientRect();
+    var hidden = false;
 
-    pepe.addEventListener("click", function(){
+    setInterval(function(){
+        
+        pepe.style.visibility = hidden ? 'visible' : 'hidden'
+        hidden = !hidden
+
         var newX = Math.floor(Math.random() * (w))
         var newY = Math.floor(Math.random() * (h))
 
@@ -23,6 +27,10 @@
         }else{
             pepe.style.top  = newY+ "px"
         }
+    },750)
+
+    pepe.addEventListener("click", function(){
+        
     
     })
 
