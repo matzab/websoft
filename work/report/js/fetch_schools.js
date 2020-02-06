@@ -6,20 +6,17 @@
     var schoolTable = document.getElementById("schoolTable")
 
 
-    var schoolNr
     var komunSchools
     var jsonObj 
     fetch('data/kommun_nrs.json')
         .then(res => res.json())
-        .then(data => schoolNr = data)
-        .then((schoolNr) => console.log(schoolNr))
-        .then(jsonObj = JSON.parse(schoolNr))
+        .then(data => jsonObj =  JSON.parse(data))
 
     //   schoolNr = '{    "Uttagsdatum": "2020-02-05T10:34:26.8768229+01:00",     "Kommun": [     {               "Kommunkod": "1440",  "Namn": "Ale" },{               "Kommunkod": "0382",  "Namn": "Östhammar" }, { "Kommunkod": "1256","Namn": "Östra Göinge"},{"Kommunkod": "2513", "Namn": "Överkalix"},{     "Kommunkod": "2518", "Namn": "Övertorneå"}]}'
 
 
 
-    //   console.log(jsonObj)
+       console.log(jsonObj)
 
     for (var i = 0; i < jsonObj.Kommun.length; i++) {
         var opt = document.createElement('option');
