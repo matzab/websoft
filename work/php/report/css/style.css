@@ -1,0 +1,23 @@
+/*
+ * Comments are written as C++ style. 
+ */
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 8px auto;
+    background: #fff;
+    width: 700px;
+}
+
+.pepe{
+    width: 128px;
+    height: 128px;
+    border: 1px solid black;
+    background-image: url(../img/pepe.jpg);
+    background-size: 128px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
