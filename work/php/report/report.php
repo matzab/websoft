@@ -120,7 +120,14 @@
 
 <section>
 <h2>S05</h2>
-<p>Here is the text for this section.</p>
+<p>How do you feel about PHP as a programming language?</p>
+<p>It is a weird language and i do not liek it </p>
+<p>Can you compare PHP to other languages you know?</p>
+<p></p>
+<p>>Describe how you took on the coding exercise, what grade did you aim for and are you satisfied with the result?</p>
+<p>No</p>
+<p>What is your TIL for this course section?.</p>
+<p>PHP scripting (weird)</p>
 </section>
 
 <section>

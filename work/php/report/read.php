@@ -1,26 +1,19 @@
+<?php include 'views/header.php';?>
 <?php
-/**
- * A page controller
- */
+
+
 require "config.php";
 require "src/functions.php";
 
-// Connect to the database
 $db = connectDatabase($dsn);
 
-// Prepare and execute the SQL statement
 $stmt = $db->prepare("SELECT * FROM tech");
 $stmt->execute();
-
-// Get the results as an array with column names as array keys
 $res = $stmt->fetchAll();
 
+?>
 
-
-
-?><h1>Connect to the database</h1>
-
-<p>Show some content in a table.</p>
+<h1>Table content</h1>
 
 <table>
     <tr>
